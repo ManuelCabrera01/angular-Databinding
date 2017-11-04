@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyTwoWayBindingComponent implements OnInit {
  username: String = "";
+
+ onKey(value) {
+       console.log(`Input value: ${value}`);
+   }
   constructor() { }
 
   ngOnInit() {

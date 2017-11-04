@@ -3,3 +3,6 @@
 </p>
 <input [(ngModel)]="username">
        <p> Hello {{username}}! </p>
+
+       <input #myInput (keyup)="onKey(myInput.value)">
+       <p> {{ myInput.value }} </p>
