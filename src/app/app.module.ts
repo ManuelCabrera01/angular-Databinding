@@ -6,6 +6,7 @@ import { MyPropertyBindingComponent } from './my-property-binding/my-property-bi
 import { MyEventBindingComponent } from './my-event-binding/my-event-binding.component';
 import { MyMixedBindingComponent } from './my-mixed-binding/my-mixed-binding.component';
 import { MyTwoWayBindingComponent } from './my-two-way-binding/my-two-way-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MyTwoWayBindingComponent } from './my-two-way-binding/my-two-way-bindin
     MyTwoWayBindingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
